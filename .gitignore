@@ -1,0 +1,4 @@
+.emacs.d/.session
+.emacs.d/session*
+.emacs.d/undohist/*
+.emacs.d/auto-save-list/*
