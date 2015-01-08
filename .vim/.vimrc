@@ -20,6 +20,9 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 " Required:
 NeoBundleFetch 'Shougo/neobundle.vim'
 
+" 日本語ヘルプ
+NeoBundle 'vim-jp/vimdoc-ja'
+
 " ファイルオープンを便利に
 NeoBundle 'Shougo/unite.vim'
 " Unite.vimで最近使ったファイルを表示できるようにする
@@ -255,7 +258,7 @@ noremap <C-P><C-P> :Unite buffer<CR>
 " ファイル一覧
 noremap <C-P><C-N> :Unite -buffer-name=file file<CR>
 " 最近使ったファイルの一覧
-noremap <C-P><C-Z> :Unite file_mru<CR>
+noremap <C-P><C-H> :Unite file_mru<CR>
 " sourcesを「今開いているファイルのディレクトリ」とする
 noremap :uff :<C-u>UniteWithBufferDir file -buffer-name=file<CR>
 " ウィンドウを分割して開く
