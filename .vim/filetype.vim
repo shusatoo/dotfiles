@@ -1,3 +1,3 @@
 augroup filetypedetect
-au BufNewFile,BufRead *.twig    setf php
+" au BufNewFile,BufRead *.twig    setf php
 augroup END

@@ -66,6 +66,8 @@ NeoBundle 'tomasr/molokai'
 NeoBundle 'violetyk/neocomplete-php.vim'
 let g:neocomplete_php_locale = 'ja'
 
+" twig systax highlighting
+NeoBundle 'evidens/vim-twig'
 
 call neobundle#end()
 
