@@ -28,7 +28,7 @@ NeoBundle 'Shougo/unite.vim'
 " Unite.vimで最近使ったファイルを表示できるようにする
 NeoBundle 'Shougo/neomru.vim'
 " 補完プラグイン
-NeoBundle 'Shougo/neocomplete.vim'
+" NeoBundle 'Shougo/neocomplete.vim'
 " スニペット補完プラグイン
 NeoBundle 'Shougo/neosnippet.vim'
 " 各種スニペット
