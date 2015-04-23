@@ -3,6 +3,12 @@ set nocompatible
 " 一旦ファイルタイプ関連を無効化する
 filetype off
 
+" 半角文字フォント
+set guifont=Ricty\ 12
+" 全角文字フォント
+set guifontwide=Ricty\ 12
+
+
 """"""""""""""""""""""""""""""
 " プラグインのセットアップ
 """"""""""""""""""""""""""""""
@@ -71,6 +77,12 @@ let g:neocomplete_php_locale = 'ja'
 
 " twig systax highlighting
 NeoBundle 'evidens/vim-twig'
+
+" Markdown syntax
+NeoBundle "godlygeek/tabular"
+NeoBundle "joker1007/vim-markdown-quote-syntax"
+NeoBundle "rcmdnk/vim-markdown"
+
 
 call neobundle#end()
 
@@ -187,6 +199,15 @@ au FileType unite inoremap <silent> <buffer> <expr> <C-K> unite#do_action('vspli
 au FileType unite nnoremap <silent> <buffer> <ESC><ESC> :q<CR>
 au FileType unite inoremap <silent> <buffer> <ESC><ESC> <ESC>:q<CR>
 """"""""""""""""""""""""""""""
+
+""""""""""""""""""""""""""""""
+" vim_markdown の設定
+""""""""""""""""""""""""""""""
+let g:vim_markdown_liquid=1
+let g:vim_markdown_frontmatter=1
+let g:vim_markdown_math=1
+au BufRead,BufNewFile *.{txt,text} set filetype=markdown
+
 
 """"""""""""""""""""""""""""""
 " その他キーマップ
